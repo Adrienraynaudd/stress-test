@@ -20,7 +20,7 @@ pm2 scale stress-test 10
 
 const http = require("http");
 
-const PORT = process.env.PORT || 3000;
+const PORT = 80;
 
 function burnCPU(durationMs) {
   const start = Date.now();
