@@ -1,5 +1,5 @@
 config:
-  target: "http://localhost:3000"
+  target: "https://stresstest-azexewcgg4d5hmed.francecentral-01.azurewebsites.net/"
   phases:
     - duration: 10
       arrivalRate: 5
@@ -10,7 +10,7 @@ config:
     - duration: 15
       arrivalRate: 50
       name: "Charge forte"
-    - duration: 20
+    - duration: 60
       arrivalRate: 100
       name: "Pic de charge"
 
@@ -18,4 +18,4 @@ scenarios:
   - name: "Stress CPU"
     flow:
       - get:
-          url: "/?duration=10"
+          url: "/?duration=100"
